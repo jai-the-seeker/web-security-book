@@ -1,8 +1,18 @@
-# Cross-site request forgery (CSRF)
+---
+description: Defense-in-depth strategy
+---
+
+# Cross-Site Request Forgery (CSRF)
 
 ## Summary
 
-In this section, we will explore the root cause of CSRF attacks, how they can be launched, and some mitigation measures. While the use of CSRF tokens is a well-established practice for protection against CSRF attacks, the SameSite attribute is a lesser-known but effective defense-in-depth mechanism. However, deploying the SameSite attribute requires careful consideration to avoid consumer confusion caused by unexpected behaviors. You can refer to Udemy course on `Web Security: A Hands on Approach` by Prof Wenliang Du for detailed explanation on the CSRF attack.
+In this section, we will explore the root cause of CSRF attacks, how they can be launched, and some mitigation measures. While the use of CSRF tokens is a well-established practice for protection against CSRF attacks, the SameSite attribute is a lesser-known but effective defense-in-depth mechanism. However, deploying the SameSite attribute requires careful consideration to avoid consumer confusion caused by unexpected behaviors.&#x20;
+
+### Resources
+
+Some good resources to understand the concept are:\
+✔️Udemy course on `Web Security: A Hands on Approach` by Prof [Wenliang (Kevin) Du](https://www.linkedin.com/in/ACoAAAAGwKQBmDxWPESBkWfShU6EWxTn8Fcq97c).\
+✔️[draft-ietf-httpbis-rfc6265bis-11](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis-11#strict-lax)
 
 ## Cross-Site Request
 

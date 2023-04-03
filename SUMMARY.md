@@ -1,3 +1,3 @@
 # Table of contents
 
-* [Cross-site request forgery (CSRF)](README.md)
+* [Cross-Site Request Forgery (CSRF)](README.md)

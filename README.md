@@ -2,7 +2,7 @@
 
 ## Summary
 
-In this section, we will explore the root cause of CSRF attacks, how they can be launched, and some mitigation measures. While the use of CSRF tokens is a well-established practice for protection against CSRF attacks, the SameSite attribute is a lesser-known but effective defense-in-depth mechanism. However, deploying the SameSite attribute requires careful consideration to avoid consumer confusion caused by unexpected behaviors.&#x20;
+In this section, we will explore the root cause of CSRF attacks, how they can be launched, and some mitigation measures. While the use of CSRF tokens is a well-established practice for protection against CSRF attacks, the SameSite attribute is a lesser-known but effective defense-in-depth mechanism. However, deploying the SameSite attribute requires careful consideration to avoid consumer confusion caused by unexpected behaviors. You can refer to Udemy course on `Web Security: A Hands on Approach` by Prof Wenliang Du for detailed explanation on the CSRF attack.
 
 ## Cross-Site Request
 

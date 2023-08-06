@@ -100,7 +100,7 @@ The attacker can dynamically construct a page with a hidden form that is automat
 
 ```
 
-<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption><p>The automatic submission of form data</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>The automatic submission of form data</p></figcaption></figure>
 
 ## Countermeasures
 

@@ -100,7 +100,7 @@ The attacker can dynamically construct a page with a hidden form that is automat
 
 ```
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption><p>The automatic submission of form data</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption><p>The automatic submission of form data</p></figcaption></figure>
 
 ## Countermeasures
 
@@ -154,9 +154,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 ```
 
-<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption><p>View Page Source</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (1).png" alt=""><figcaption><p>View Page Source</p></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption><p>Request and Response</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Request and Response</p></figcaption></figure>
 
 ### SameSite Attribute
 
@@ -166,15 +166,15 @@ A SameSite cookie can have three possible values: `Strict`, `Lax`, or `None`. If
 
 To gain insight into the behavior of cookies in cross-site requests, we will analyze the request and response of the website `www.example32.com`, which sets three cookies: `cookie-normal`, `cookie-lax`, and `cookie-strict`.
 
-<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption><p>Request and Response setting the cookies</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Request and Response setting the cookies</p></figcaption></figure>
 
 On the cross-site page `www.attacker32.com`, clicking the link will only show two cookies, `Normal` and `Lax`. The Strict cookie is not attached because it is a cross-site request. Submitting a GET request form will attach the Lax cookie, but the Strict cookie will still not be attached.
 
-<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption><p>Cross site GET request</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (1).png" alt=""><figcaption><p>Cross site GET request</p></figcaption></figure>
 
 Submitting a POST request form will only attach the `Normal` cookie. This is because GET requests are usually used for retrieving information, and the `Lax` cookie can be helpful for that. POST requests are usually used for modifying information, so attaching cookies can be more damaging.&#x20;
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>Cross site POST request </p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (17).png" alt=""><figcaption><p>Cross site POST request </p></figcaption></figure>
 
 ### Considerations for SameSite Cookie
 
